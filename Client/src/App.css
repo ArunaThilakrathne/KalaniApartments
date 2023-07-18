@@ -1,0 +1,184 @@
+*{
+margin: 0px;
+padding:0px;
+}
+
+.App{
+    height: 100vh;
+}
+
+.container{
+margin-left:40px;
+margin-right:40px;
+padding-top:10px;
+margin-bottom:40px;
+}
+/* login page */
+form{
+    padding: 50px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    gap: 20px;
+    /* background-color: rgb(60, 70, 78); */
+}
+.inputs{
+    padding: 50px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    gap: 20px;
+}
+.auth{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+input{
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color:  transparent;
+    color: white; 
+    font-size: 16px;
+}
+
+::placeholder{
+    color: white;
+    text-align: center;
+}
+
+button{
+    padding:10px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background-color:  rgb(58, 58, 58);
+    color:white;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.hoverbutton :hover{
+    background-color: rgb(39, 39, 39);
+    color: white;
+   
+}
+p{
+    text-align: center;
+    color:black;
+}
+
+/* navbar */
+
+.nav{
+padding: 0px 0px;
+display: flex;
+justify-content: flex-end;
+background-color: rgb(52, 51, 51);
+
+}
+
+.links{
+    color: inherit;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 20px;
+    color:white;
+    font-weight: 500;
+}
+.links :hover{
+    color:rgb(1, 187, 190);
+}
+
+.nav span{
+    cursor: pointer;
+}
+/* Footer */
+
+footer{
+    text-transform: uppercase;
+    color:white;
+    padding: 8px;
+    display: flex;
+    margin-top:20vh;
+    justify-content: center;
+    font-size: 12px;
+}
+
+
+/* Home */
+
+
+.hcard{
+    display: flex;
+    padding:38px;
+    background: rgb(58, 58, 58);
+    
+    border-radius: 20px;
+    color: aliceblue;
+   justify-content: center;
+
+}
+
+.hcard:hover{
+    background-color:rgb(39, 39, 39);
+   color: white;
+
+}
+
+@media (max-width:768px){
+   
+
+    .container{
+        margin-left:10px;
+        margin-right:10px;
+        padding-top:10px;
+        margin-bottom:10px;
+        }
+    .links{
+       padding: 10px;
+        font-size: 12px;
+    }
+    
+    .nav{
+        justify-content: center;
+    }
+    footer{
+        text-transform: uppercase;
+        color:rgb(184, 182, 182);
+        padding: 8px;
+        margin-top: 0px;
+        justify-content: center;
+        font-size: 12px; 
+    }
+    .home{
+padding-left:10px;
+    }
+
+    .hcard{
+        width: 10vh;
+    }
+    form{
+        padding: 40px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        gap: 20px;
+        /* background-color: rgb(60, 70, 78); */
+    }
+    .inputs{
+        padding: 40px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        gap: 20px; 
+    }
+}

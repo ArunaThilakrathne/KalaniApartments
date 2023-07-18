@@ -1,0 +1,91 @@
+.parent {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin-top: 10px;
+   
+}
+.segment {
+    display: grid;
+    place-items: left;
+    text-align: left;
+    margin:20px;
+     /* grid-template-rows: 50px;   */
+}
+.twelve {
+    grid-column: 1/ span 12; /* Start from the 1st colum across 12 columns */
+}
+.eight {
+    grid-column: 5/ span 4;
+    /* grid-column: 5/ span 8; Start from the 5th column across 8 columns */
+}
+.fiveplusfour{
+    grid-column: 5/ span 4;
+}
+.center{
+        grid-column: 1/ span 4; /* Start from the 5th column across 8 columns */
+}
+
+.four {
+    grid-column: 1/ span 4; /* Start from the 1st column across 4 columns */
+}
+
+.ninetotwelve{
+    grid-column: 9/ span 12;
+}
+
+.g9to12-g3to4{
+grid-column: 9/ span 12;
+}
+
+.fivetoeight{
+    grid-column: 5/ span 3;
+}
+
+@media (max-width:800px){
+    .parent {
+        display: grid;
+        grid-template-columns:repeat(4,1fr);
+        padding-left: 15px;
+        padding-right: 25px;
+        margin-top: 10px;
+    }
+    .segment {
+        display: grid;
+        place-items: left;
+        text-align: left;
+        margin: 10px;
+         /* grid-template-rows: 50px;   */
+    }
+    .twelve {
+        grid-column:1/span 4;
+        /* Start from the 1st colum across 12 columns */
+    }
+    .eight {
+        grid-column: 3/ span 4; /* Start from the 5th column across 8 columns */
+    }
+    .fiveplusfour{
+        grid-column: 1/ span 2;
+    }
+    .center{
+            grid-column: 3/ span 4; /* Start from the 5th column across 8 columns */
+    }
+    .four {
+        grid-column: 1/ span 2; /* Start from the 1st column across 4 columns */
+    }
+    .onetoeight{
+        grid-column: 1/ span 4;
+    }
+    .ninetotwelve{
+        grid-column:1/span 2;
+    }
+    .g9to12-g3to4{
+        grid-column: 3/ span 12;
+        }
+    .ninetoeleven{
+        grid-column: 1/span 4;
+    }
+    .eighttoeleven{
+        grid-column: 3/ span 4;
+    }
+}
+
